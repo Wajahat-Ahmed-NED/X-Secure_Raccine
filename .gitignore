@@ -1,0 +1,75 @@
+#######################
+# Visual Studio files #
+#######################
+*.suo
+*.user
+*.sdf
+ipch/
+.vs/
+
+##################
+# Python Ness    #
+##################
+__pycache__/
+env/
+*.pyc
+
+##################
+# Compiled files #
+##################
+linux/
+bin/
+obj/
+Release/
+Debug/
+*.dll
+*.exe
+*.pdb
+*.obj
+*.log
+*.tlog
+*.htm
+*.pch
+watchlist.db
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.json
+raccine.pdb
+vc140.pdb
+raccine.ilk
+Raccine/*
+Raccine.zip
+build_dist.bat
+
+packages/
