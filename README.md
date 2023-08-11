@@ -254,9 +254,8 @@ The right pronounciation is "Rax-Een".
 
 ## Credits
 
-- Florian Roth [@cyb3rops](https://twitter.com/cyb3rops)
-- John Lambert [@JohnLaTwC](https://twitter.com/JohnLaTwC)
-- Eran Yom-Tov [@eran_yom_tov](https://twitter.com/eran_yom_tov)
-- Ollie Whitehouse [@ollieatnccgroup](https://twitter.com/ollieatnccgroup)
-- Branislav Đalić [@LordOfThePies4](https://twitter.com/LordOfThePies4)
-- Hilko Bengen [@_hillu_](https://twitter.com/_hillu_)
+- Wajahat Ahmed [@wajahat](https://www.linkedin.com/in/wajahatahmed399/)
+- Rehan Mumztaz [@rehan](https://www.linkedin.com/in/rehan-mumtaz/)
+- Kabeer Ahmed [@kabeer](https://www.linkedin.com/in/kabeerahmed11/)
+- Moiz Tariq [@moiz](https://www.linkedin.com/in/moiz-tariq/)
+
