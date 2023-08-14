@@ -72,7 +72,7 @@ ECHO ...........................................................................
 :::
 for /f "delims=: tokens=*" %%A in ('findstr /b ::: "%~f0"') do @echo(%%A
 ECHO   A Simple Ransomware and Emotet Vaccine
-ECHO   Installer by Florian Roth, March 2021  
+ECHO   Installer by X-Secure, August 2023  
 ECHO.                       
 ECHO ------------------------------------------------------------------------------
 ECHO   WARNING! Raccine could break your backup solution 
@@ -156,9 +156,9 @@ ECHO Creating empty log file ...
 echo. 2>"%ProgramData%\Raccine\Raccine_log.txt"
 icacls "%ProgramData%\Raccine\Raccine_log.txt" /grant Users:F
 ECHO Registering Eventlog Events
-eventcreate.exe /L Application /T Information /id 1 /so Raccine /d "Raccine Setup: Registration of Event ID 1 - Used for Informational Messages" 2> nul
-eventcreate.exe /L Application /T Information /id 2 /so Raccine /d "Raccine Setup: Registration of Event ID 2 - Used for Malicious Actitivty" 2> nul
-eventcreate.exe /L Application /T Information /id 3 /so Raccine /d "Raccine Setup: Registration of Event ID 3 - Used for Benign Activity" 2> nul
+eventcreate.exe /L Application /T Information /id 1 /so Raccine /d "X-secure Setup: Registration of Event ID 1 - Used for Informational Messages" 2> nul
+eventcreate.exe /L Application /T Information /id 2 /so Raccine /d "X-secure Setup: Registration of Event ID 2 - Used for Malicious Actitivty" 2> nul
+eventcreate.exe /L Application /T Information /id 3 /so Raccine /d "S-secure Setup: Registration of Event ID 3 - Used for Benign Activity" 2> nul
 :: Registry Settings
 REG.EXE ADD HKLM\Software\Raccine /v ShowGui /t REG_DWORD /d 1 /F
 REG.EXE ADD HKLM\Software\Raccine /v ScanMemory /t REG_DWORD /d 1 /F
@@ -294,7 +294,7 @@ EXIT /B %ERRORLEVEL%
 ECHO WARNING: you may have downloaded the source code only or an Antivirus has deleted an important part of the package
 ECHO Make sure to download a package that contains the compiled binaries by downloading a package from the RELEASE section.
 ECHO.
-ECHO   https://github.com/Neo23x0/Raccine/releases
+ECHO   https://github.com/Wajahat-Ahmed-NED/X-Secure_Raccine
 ECHO.
 ECHO The installer will exit now ..
 TIMEOUT /t 30
