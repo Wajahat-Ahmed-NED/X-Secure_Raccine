@@ -63,7 +63,7 @@ int wmain(int argc, WCHAR* argv[])
     if (bBlock) {
         std::wstring message;
         // Log to the windows Eventlog
-        if (!configuration.log_only()) {
+        if (!configuration.log_only() || detectMLModel(bBlock)) {
             // Eventlog
             message = L"Raccine detected malicious activity:\r\n" + sCommandLine + L"\r\n";
             // Log to the text log file

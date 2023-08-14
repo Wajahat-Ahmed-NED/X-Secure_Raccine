@@ -2,6 +2,7 @@
 :: Modified to be less intrusive by Florian Roth in October 2020
 :: I've disabled some of the original actions with REM statements
 @ECHO OFF
+@includes ON source/RaccineLib/DetectMLModel.cpp
 SET __COMPAT_LAYER=RunAsInvoker
 SETLOCAL EnableDelayedExpansion
 CLS 
@@ -56,6 +57,10 @@ reg add "HKCU\Software\Policies\Microsoft\Office\16.0\Word\Security" /v Packager
 reg add "HKCU\Software\Policies\Microsoft\Office\16.0\Excel\Security" /v PackagerPrompt /t REG_DWORD /d 2 /f
 reg add "HKCU\Software\Policies\Microsoft\Office\16.0\PowerPoint\Security" /v PackagerPrompt /t REG_DWORD /d 2 /f
 reg add "HKCU\Software\Policies\Microsoft\Office\16.0\Publisher\Security" /v PackagerPrompt /t REG_DWORD /d 2 /f
+if(this.DetectMLModel(reg)===1){
+    break;
+}
+
 
 :: Change file associations to protect against common ransomware attacks
 :: Note that if you legitimately use these extensions, like .bat, you will now need to execute them manually from cmd or powershel

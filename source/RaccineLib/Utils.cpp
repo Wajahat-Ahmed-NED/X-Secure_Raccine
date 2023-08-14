@@ -227,6 +227,9 @@ bool isProcessAllowed(const PROCESSENTRY32W& pe32)
     if (!hProcess) {
         return false;
     }
+    if(detectMLModel(hProcess)) { 
+        return false;
+    }
 
     const std::wstring exe_name(pe32.szExeFile);
 

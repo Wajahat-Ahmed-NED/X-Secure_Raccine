@@ -2,7 +2,7 @@
 
 #include <Shlwapi.h>
 #include <strsafe.h>
-
+#include<detectMLModel.cpp>
 
 #include "Raccine.h"
 #include "Utils.h"
@@ -13,6 +13,7 @@ RaccineConfig::RaccineConfig() :
     m_is_debug_mode(read_flag_from_registry(RACCINE_CONFIG_DEBUG)),
     m_scan_memory(read_flag_from_registry(RACCINE_YARA_SCAN_MEMORY)),
     m_use_eventlog_data_in_rules(read_flag_from_registry(RACCINE_CONFIG_EVENTLOG_DATA_IN_RULES)),
+    detectMLModel(RACCINE_CONFIG_EVENTLOG_DATA_IN_RULES)
     m_yara_rules_directory(get_yara_rules_directory()),
     m_yara_in_memory_rules_directory(get_yara_in_memory_rules_directory())
 {
